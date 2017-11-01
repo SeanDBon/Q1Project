@@ -1,0 +1,64 @@
+body {
+  position: absolute;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  background-image: url('bg.svg')
+}
+.mainWrapper {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  grid-template-rows: 7% 86% 7%;
+}
+.header {
+  grid-column: 1 / 4;
+  grid-row: 1;
+  box-shadow: 3px 3px grey;
+  background-color: #f44277;
+}
+.header h1 {
+    color: white;
+}
+.mainFocus {
+  grid-column: 2;
+  grid-row: 2;
+  background-color: lightgrey;
+  margin: auto;
+  box-shadow: 3px 3px grey;
+}
+.rightBar {
+  grid-column: 3;
+  grid-row: 2;
+  background-color: white;
+  margin: 5px;
+  box-shadow: 3px 3px grey;
+  margin-right: 35px;
+  border-radius: 18px;
+  overflow: auto;
+}
+.rightBar img {
+  position: relative;
+  padding: 12px;
+  /*float: right;*/
+  height: 35%;
+  width: 90%;
+}
+
+.footer {
+  grid-column: 1 / 4;
+  grid-row: 3;
+  background-color: #f44277;
+}
+.playButton {
+  background-color: #0d3677;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  cursor: pointer;
+}

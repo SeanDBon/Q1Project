@@ -1,0 +1,96 @@
+html, body {margin:0; height: 100%; overflow: hidden;}
+body {
+  background-size: cover;
+  position: absolute;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  background-image: url('bg.svg')
+}
+.mainWrapper {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  grid-template-rows: 7% 86% 7%;
+}
+.header {
+  grid-column: 1 / 4;
+  grid-row: 1;
+  box-shadow: 3px 3px grey;
+  background-color: #f44277;
+}
+.header img  {
+  margin-left: 40px;
+  margin-top: -53px;
+  height: 160px;
+  width: 160px;
+}
+.header button {
+  border-left: 4px solid black;
+  margin-right: 40px;
+  margin-top: 2px;
+  float: right;
+}
+.mainFocus {
+  grid-column: 2;
+  grid-row: 2;
+  margin-top: 35%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.mainFocus1 {
+  grid-column: 2;
+  grid-row: 2;
+  margin-top: 1%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.rightBar {
+  grid-column: 3;
+  grid-row: 2;
+  background-color: #0d3677;
+  margin: 5px;
+  box-shadow: 3px 3px grey;
+  margin-right: 35px;
+  border-radius: 18px;
+  overflow: auto;
+  border: 3px solid black;
+}
+.rightBar img {
+  position: relative;
+  padding: 10px;
+  height: 33%;
+  width: 90%;
+  border-bottom: 3px solid black;
+}
+.footer {
+  grid-column: 1 / 4;
+  grid-row: 3;
+  background-color: #f44277;
+}
+.about {
+  float: right;
+  margin-right: 15%;
+  color: white;
+}
+.cp {
+  margin-left: 15%;
+  color: white;
+}
+.playButton {
+  background-color: #0d3677;
+  border: none;
+  color: white;
+  padding: 14px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  cursor: pointer;
+}
+iframe {
+  overflow: hidden;
+  height: 590px;
+  width: 610px;
+}
